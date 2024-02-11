@@ -1,6 +1,10 @@
 #!/bin/bash
 #Display welcome message to the user
-echo "welcome to the File Management System"
+echo "Please enter your name:"
+read name
+
+echo "welcome $name  to the File Management System"
+
 # Function to display menu
 display_menu() {
     echo "1. List files in the directory"
@@ -34,6 +38,7 @@ delete_file() {
 # Main script
 
 # Get the directory from the user
+
 echo -n "Enter the directory path: "
 read directory
 
@@ -42,10 +47,10 @@ if [ ! -d "$directory" ]; then
     echo "Invalid directory. Exiting..."
     exit 1
 fi
-
+echo "MENU OPTION"
 while true; do
     display_menu
-
+    
     # Get user choice
     echo -n "Enter your choice (1-4): "
     read choice
