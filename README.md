@@ -1,0 +1,1 @@
+Here is bash script that user will interact to manage files in specified directory by performing various action like creating ,deleting and list file in specified directory and the script will check input validation and handling directory by checking if it is existing or not.
