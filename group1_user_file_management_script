@@ -1,9 +1,9 @@
 #!/bin/bash
 #Display welcome message to the user
-echo "Please enter your name:"
+echo -n "Please enter your name:"
 read name
 
-echo "welcome $name  to the File Management System"
+echo "Welcome $name  to the File Management System"
 
 # Function to display menu
 display_menu() {
